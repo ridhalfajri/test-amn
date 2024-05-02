@@ -20,6 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/material_requirement', [MaterialRequirementController::class, 'index'])->name('material_requirement.index');
+Route::get('/mr', [MaterialRequirementController::class, 'index1'])->name('material_requirement.index');
 Route::get('/purchase_request', [PurchaseRequestController::class, 'index'])->name('purchase_request.index');
 Route::post('/purchase_request', [PurchaseRequestController::class, 'store'])->name('purchase_request.store');
 Route::get('/production_planning', [ProductPlanningController::class, 'index'])->name('production_planning.index');

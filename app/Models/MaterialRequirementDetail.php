@@ -9,4 +9,5 @@ class MaterialRequirementDetail extends Model
 {
     use HasFactory;
     protected $table = 'material_requirement_detail';
+    public $timestamps = false;
 }
